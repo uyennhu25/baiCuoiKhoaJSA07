@@ -1,0 +1,405 @@
+:root {
+    --primary: #2885d1
+        /*var(--primary)*/
+    ;
+    --secondary: #70c0e8
+        /*var(--secondary)*/
+    ;
+    --tertiary: #aae3ff
+        /*var(--tertiary)*/
+    ;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(151, 151, 151);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(131, 130, 130);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Anek Latin', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.nav_bar {
+    width: 100%;
+    display: block;
+    position: absolute;
+}
+
+.nav_bar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--primary);
+}
+
+.nav_bar li {
+    display: inline-block;
+    padding: 10px 25px;
+    border-top: 3px solid var(--primary);
+    border-bottom: 3px solid var(--primary);
+    transition: all 0.2s;
+    color: white;
+}
+
+.nav_bar .nav:hover {
+    background-color: #1c71b7;
+    border-top: 3px solid #1c71b7;
+    border-bottom: 3px solid var(--secondary);
+    transition: all 0.2s;
+}
+
+.nav_bar button {
+    margin: 0;
+    padding: 5px 15px;
+    background-color: var(--tertiary);
+    color: var(--primary);
+    border: none;
+    border-radius: 3px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.hero {
+    max-width: 100%;
+    background-image: url("https://www.trailsofindochina.com/wp-content/uploads/2018/04/halong_header2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    border-radius: 0% 0% 25% 25%;
+}
+
+.hero_content {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+h1 {
+    margin: 0;
+    padding-top: 200px;
+    font-size: 60px;
+    font-family: 'Bilbo', cursive;
+}
+
+h2 {
+    margin: 0;
+    font-size: 35px;
+    font-family: 'Bilbo', cursive;
+}
+
+h3 {
+    color: black;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'Bilbo', cursive;
+    font-size: 50px;
+}
+
+h4 {
+    color: white;
+    padding: 0 0 0 10px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+
+h5 {
+    color: var(--primary);
+    font-size: 25px;
+    margin: 3px 0;
+}
+
+.button {
+    background: linear-gradient(50deg, var(--primary) 0%, var(--secondary) 100%);
+    border: none;
+    padding: 14px 15px;
+    border-radius: 60px;
+}
+
+#form_card {
+    display: none;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 30px;
+    width: 300px;
+    /*box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(1px);*/
+    border-radius: 5px;
+    background-color: var(--tertiary);
+}
+
+#name,
+#password,
+#confirmpassword {
+    width: 240px;
+    padding: 10px 0;
+    margin: 10px 0;
+    border: none;
+    border-bottom: solid 1px var(--primary);
+    border-radius: 3px;
+}
+
+#submit {
+    margin: 40px 0;
+    border: none;
+    background: var(--primary);
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 8px;
+    width: 240px;
+    color: white;
+}
+
+.caption {
+    color: grey;
+    font-size: 10px;
+}
+
+.carousel {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: -75px;
+}
+
+.carousel img {
+    width: 300px;
+    height: 175px;
+    transition: transform .3s;
+    margin: 0 auto;
+}
+
+.carousel img:hover {
+    transform: scale(1.1)
+}
+
+#content {
+    width: auto;
+    padding: 100px 20%;
+}
+
+hr {
+    width: 25%;
+    margin-left: 0;
+    height: 3px;
+    background: black;
+}
+
+.popular-destinations {
+    width: auto;
+}
+
+.destination-card {
+    width: 14.063em;
+    height: 325px;
+    overflow: hidden;
+    background-position: center;
+    margin: 0 5px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.destination-card:hover {
+    cursor: pointer;
+}
+
+#slick-next,
+#slick-prev {
+    border-radius: 50%;
+    background-color: white;
+    font-size: 20px;
+    float: right;
+    border: none;
+    color: black;
+    cursor: pointer;
+    margin: 0 5px 0 0;
+}
+
+.seemore {
+    color: white;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 5px 8px;
+    letter-spacing: 1px;
+    display: none;
+}
+
+
+/*______________________________________HOI AN______________________________________*/
+.hoiAn-cards-container {
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+.hoiAn-card {
+    max-width: 31%;
+    display: inline-block;
+    margin: 0;
+    border-radius: 5px;
+    border: 2px solid grey;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.hoiAn-card img {
+    width: 100%;
+    height: 45%;
+    object-fit: cover;
+    position: relative;
+    transition: opacity .5s;
+}
+
+.hoiAn-card img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.hoiAn-card img:hover+span {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hoiAn-card span:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.hoiAn-card h5,
+p {
+    padding: 5px;
+    margin: 5px 7px 0 3px;
+    line-height: 23px;
+}
+
+.hoiAn-card span {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity .5s linear;
+    cursor: pointer;
+}
+
+
+/*______________________________________PHU QUOC______________________________________*/
+.phuQuoc-columns {
+
+}
+
+.phuQuoc-left-column {
+    
+}
+
+.phuQuoc-right-column {
+
+}
+
+/*______________________________________SAI GON______________________________________*/
+.saiGon-columns {
+    height: 405px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.saiGon-left-column {
+    max-width: 43%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.saiGon-left-column img {
+    width: 100%;
+}
+
+.saiGon-right-column {
+    max-width: 53%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow-y: scroll;
+}
+
+.saiGon-right-column .saiGon-row {
+    display: flex;
+    padding: 7px 0;
+    flex-flow: row nowrap;
+    height: 30%;
+}
+
+.saiGon-right-column .saiGon-row img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.saiGon-right-column .saiGon-row .saiGon-desc {
+    padding: 0px 10px;
+}
+
+.saiGon-right-column .saiGon-row .saiGon-desc div {
+    margin: 0;
+    padding: 0;
+    height: 70%;
+    font-size: 13px;
+    line-height: 1.4;
+    overflow-y: scroll;
+}
+
+.readbth {
+    padding: 0;
+    border: none;
+    background-color: white;
+    color: gray;
+    cursor: pointer;
+
+}
+
+.more {
+    display: none;
+}
